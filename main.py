@@ -12,16 +12,15 @@ Digite a operação matemática que deseja concluir:
 numero_1 = int(input('Coloque seu primeiro numero: '))
 numero_2 = int(input('Coloque seu segundo numero: '))
 
-#adicionando operadores
-#adicao
+#codigo da operacao
 if operacao == '+':
-    print(numero_1 + numero_2)
+    print('{} + {} = {}'.format(numero_1, numero_2, numero_1 + numero_2))
 elif operacao == '-':
-    print(numero_1 - numero_2)
+    print('{} - {} = {}'.format(numero_1, numero_2, numero_1 - numero_2))
 elif operacao == '*':
-    print(numero_1 * numero_2)
+    print('{} * {} = {}'.format(numero_1, numero_2, numero_1 * numero_2))
 elif operacao == '/':
-    print(numero_1 / numero_2)
+    print('{} / {} = {}'.format(numero_1, numero_2, numero_1 / numero_2))
 
 # operador nao valido
 else:
