@@ -13,6 +13,7 @@ def calculadora():
     #solicitar o numero para o usuario
     numero_1 = int(input('Coloque seu primeiro numero: '))
     numero_2 = int(input('Coloque seu segundo numero: '))
+        
 
     #codigo da operacao
     if operacao == '+':
@@ -23,16 +24,20 @@ def calculadora():
         print('{} * {} = {}'.format(numero_1, numero_2, numero_1 * numero_2))
     elif operacao == '/':
         print('{} / {} = {}'.format(numero_1, numero_2, numero_1 / numero_2))
-
-    # operador nao valido
     else:
         print('O operador escolhido nao eh valido, tente novamente')
+
+    novamente()
 
 #calcular de novo
 def novamente():
     calcular_novamente = input('''
     Deseja calcular novamente?
-    Y para sim e N para nao
+    S para SIM e N para NAO
     ''')
-    if
+    if calcular_novamente.upper() == 'S':
+        calculadora()
+    elif calcular_novamente.upper() == 'N':
+        print('Tchau :(')
+
 calculadora()
